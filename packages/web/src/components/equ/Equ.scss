@@ -1,0 +1,50 @@
+.equ-card {
+  .card-title {
+    @apply font-black text-cyan-100;
+  }
+  .card-one {
+    @apply border-3 border-solid border-cyan-600/30 rounded;
+    @apply px-4 py-2 text-sm my-6 relative;
+    .card-dot {
+      @apply w-2 h-2 absolute bg-cyan-400/50 rounded-xl blur-2;
+      &.card-lt {
+        left: -5px;
+        top: -5px;
+      }
+      &.card-rt {
+        right: -5px;
+        top: -5px;
+      }
+      &.card-lb {
+        left: -5px;
+        bottom: -5px;
+      }
+      &.card-rb {
+        right: -5px;
+        bottom: -5px;
+      }
+    }
+    .card-info {
+      @apply space-x-4;
+      .equ-name {
+        @apply font-bold color-cyan-100;
+      }
+      .equ-state {
+        @apply inline-block w-3 h-3 rounded-xl;
+        @apply outline outline-3 outline-offset-0 outline-cyan-500/30;
+        &.idle {
+          background-color: #37ff00;
+        }
+        &.doing {
+          background-color: #ffe100;
+        }
+        &.error {
+          background-color: #b33838
+        }
+      }
+      .equ-mat {
+        @apply text-cyan-500 font-bold;
+      }
+    }
+  }
+}

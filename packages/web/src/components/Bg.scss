@@ -1,0 +1,13 @@
+#root-bg {
+  background-image: -webkit-linear-gradient(top,
+      #000000 0%,
+      #140d3650 20%,
+      rgba(0, 0, 0, 0) 80%,
+      rgba(0, 0, 0, 0) 100%),
+    -webkit-linear-gradient(right, #000000 0%, #0b1032b8 20%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0) 100%),
+    -webkit-linear-gradient(bottom, #000000 0%, #140d3650 20%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0) 100%),
+    -webkit-linear-gradient(left, #000000 0%, #0c1452b8 20%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0) 100%),
+    url('@/assets/imgs/bg.jpg');
+
+  .root-bg-main {}
+}
